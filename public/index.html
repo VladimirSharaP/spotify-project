@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>template</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body class="app">
+  <header class="header">
+      <a class="header__logo link" href="#">
+        <img src="./logo.png" alt="Лого" width="42px" height="42px">
+        <h1 class="header__title">Spotify</h1>
+      </a>
+      <nav class="header__navigation">
+          <a class="header__link link" href="#">Premium</a>
+          <a class="header__link link" href="#">Справка</a>
+          <a class="header__link link" href="#">Скачать</a>
+          <a class="header__link link" href="#">Профиль</a>
+      </nav>
+  </header>
+  <main class="content">
+    <section class="content__premium">
+      <p class="content__paragraph">SPOTIFY PREMIUM</p>
+      <h1 class="content__title">Listen without limits</h1>
+      <h3>Play millions of songs ad-free, on-demand, and offline.</h3>
+      <button class="premium__button">ПОСМОТРЕТЬ ВАРИАНТЫ ПОДПИСКИ</button>
+    </section>
+    <section class="content__player">
+      <h2>Не знаете, что послушать?</h2>
+      <h3>Начните с лучших новинок.</h3>
+      <button class="player__button">ОТКРЫТЬ ВЕБ-ПЛЕЕР</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__navigations">
+      <div class="footer__logo">
+        <a class="header__logo link" href="#">
+          <img src="./logo.png" alt="Лого" width="42px" height="42px">
+          <h1 class="header__title">Spotify</h1>
+        </a>
+      </div>
+      <dl class="footer__list">
+        <dt class="title">Компания</dt>
+        <dd><a href="#" class="link">О нас</a></dd>
+        <dd><a href="#" class="link">Вакансии</a></dd>
+        <dd><a href="#" class="link">For the Record</a></dd>
+      </dl>
+      <dl class="footer__list">
+        <dt class="title">Сообщества</dt>
+        <dd><a href="#" class="link">Для исполнителей</a></dd>
+        <dd><a href="#" class="link">Для разработчиков</a></dd>
+        <dd><a href="#" class="link">Реклама</a></dd>
+        <dd><a href="#" class="link">Для инвесторов</a></dd>
+        <dd><a href="#" class="link">Для вендоров</a></dd>
+      </dl>
+      <dl class="footer__list">
+        <dt class="title">Полезные ссылки</dt>
+        <dd><a href="#" class="link">Справка</a></dd>
+        <dd><a href="#" class="link">Веб плеер</a></dd>
+        <dd><a href="#" class="link">Бесплатное мобильное приложение</a></dd>
+      </dl>
+    </div>
+    <p class="footer__copyright title">© 2022 Spotify-clone</p>
+  </footer>
+</body>
 </html>
